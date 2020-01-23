@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+`rm prog1`
+echo "removed old version"
+
+`g++ -ansi -pedantic -Wall -Werror -Wextra -std=c++11 prog1.cc -o prog1.exe`
+
+if [ $? -eq 0 ]
+then
+echo "Complied"
+fi
+
+#if [ $? -eq 0 ]
+#then
+#	`./prog1 < input.txt &> output.txt`
+#fi
+#	`head -15 output.txt`
